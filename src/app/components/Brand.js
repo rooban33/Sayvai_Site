@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -11,32 +12,62 @@ export default function Brand() {
             <ul>
               <li>
                 <Link href="#">
-                  <img src="/img/brand/1.png" alt="brand" />
+                  <Image
+                    src="/img/brand/1.png"
+                    alt="brand"
+                    width={190}
+                    height={74}
+                  />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/img/brand/2.png" alt="brand" />
+                  <Image
+                    src="/img/brand/2.png"
+                    alt="brand"
+                    width={190}
+                    height={74}
+                  />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/img/brand/3.png" alt="brand" />
+                  <Image
+                    src="/img/brand/3.png"
+                    alt="brand"
+                    width={190}
+                    height={74}
+                  />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/img/brand/4.png" alt="brand" />
+                  <Image
+                    src="/img/brand/4.png"
+                    alt="brand"
+                    width={190}
+                    height={74}
+                  />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/img/brand/5.png" alt="brand" />
+                  <Image
+                    src="/img/brand/5.png"
+                    alt="brand"
+                    width={190}
+                    height={74}
+                  />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/img/brand/6.png" alt="brand" />
+                  <Image
+                    src="/img/brand/6.png"
+                    alt="brand"
+                    width={190}
+                    height={74}
+                  />
                 </Link>
               </li>
             </ul>

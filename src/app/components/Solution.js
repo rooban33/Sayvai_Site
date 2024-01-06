@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -15,7 +16,12 @@ export default function Solution() {
             <div className="solution-item">
               <div className="row align-items-center">
                 <div className="col-md-6 pr-47">
-                  <img src="/img/solution.svg" alt="solution" />
+                  <Image
+                    src="/img/solution.svg"
+                    alt="solution"
+                    width={569}
+                    height={501}
+                  />
                 </div>
                 <div className="col-md-6 pl-47">
                   <h3>Seamless Integrations</h3>
@@ -46,21 +52,36 @@ export default function Solution() {
                 <div className="col-md-6 pl-47 mt-30">
                   <div className="solution-item-list">
                     <div className="solution-single">
-                      <img src="/img/check.svg" alt="check" />
+                      <Image
+                        src="/img/check.svg"
+                        alt="check"
+                        width={24}
+                        height={56}
+                      />
                       <div>
                         <h4>Marketing</h4>
                         <p>Chat assistant for the marketing & paid ads team.</p>
                       </div>
                     </div>
                     <div className="solution-single">
-                      <img src="/img/check.svg" alt="check" />
+                      <Image
+                        src="/img/check.svg"
+                        alt="check"
+                        width={24}
+                        height={56}
+                      />
                       <div>
                         <h4>Sales</h4>
                         <p>Chat assistant for the Sales teams.</p>
                       </div>
                     </div>
                     <div className="solution-single">
-                      <img src="/img/check.svg" alt="check" />
+                      <Image
+                        src="/img/check.svg"
+                        alt="check"
+                        width={24}
+                        height={56}
+                      />
                       <div>
                         <h4>Finance</h4>
                         <p>
@@ -69,7 +90,12 @@ export default function Solution() {
                       </div>
                     </div>
                     <div className="solution-single">
-                      <img src="/img/check.svg" alt="check" />
+                      <Image
+                        src="/img/check.svg"
+                        alt="check"
+                        width={24}
+                        height={56}
+                      />
                       <div>
                         <h4>Engineering</h4>
                         <p>
@@ -87,7 +113,12 @@ export default function Solution() {
                   <div className="solution-item-list solution-item-chat">
                     <div className="solution-chat-message">
                       <div className="solution-chat-message-item">
-                        <img src="/img/user.svg" alt="user" />
+                        <Image
+                          src="/img/user.svg"
+                          alt="user"
+                          width={32}
+                          height={32}
+                        />
                         <div className="solution-chat-message-item-content">
                           <h3>
                             Jane Cooper <span>8:42 PM</span>
@@ -101,7 +132,12 @@ export default function Solution() {
                         </div>
                       </div>
                       <div className="solution-chat-message-item">
-                        <img src="/img/user-assistify.svg" alt="user" />
+                        <Image
+                          src="/img/user-assistify.svg"
+                          alt="user"
+                          width={32}
+                          height={32}
+                        />
                         <div className="solution-chat-message-item-content">
                           <h3>
                             Assistify AI <span>8:42 PM</span>
@@ -119,7 +155,12 @@ export default function Solution() {
                         </div>
                       </div>
                       <div className="solution-chat-message-item">
-                        <img src="/img/user.svg" alt="user" />
+                        <Image
+                          src="/img/user.svg"
+                          alt="user"
+                          width={32}
+                          height={32}
+                        />
                         <div className="solution-chat-message-item-content">
                           <h3>
                             Jane Cooper <span>8:42 PM</span>

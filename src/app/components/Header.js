@@ -1,7 +1,14 @@
+'use client';
 import Link from 'next/link';
-import React from 'react';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
     <header>
       <div className="desktop-header">
@@ -9,7 +16,7 @@ export default function Header() {
           <div className="row align-items-center">
             <div className="col-md-2">
               <Link href="/">
-                <img src="/img/logo.svg" alt="logo" />
+                <Image src="/img/logo.svg" alt="logo" width={139} height={32} />
               </Link>
             </div>
             <div className="col-md-8">
@@ -43,9 +50,9 @@ export default function Header() {
       </div>
       <div className="mobile-header">
         <Link href="/">
-          <img src="/img/logo.svg" alt="logo" />
+          <Image src="/img/logo.svg" alt="logo" width={139} height={32} />
         </Link>
-        <span className="mobile-menu-open-icon">
+        <span className="mobile-menu-open-icon" onClick={toggleMobileMenu}>
           <svg
             width="800px"
             height="800px"
@@ -65,8 +72,8 @@ export default function Header() {
             </g>
           </svg>
         </span>
-        <div className="mobile-menu">
-          <strong className="mobile-menu-close-icon">
+        <div className={`mobile-menu ${isMobileMenuOpen ? 'show-menu' : ''}`}>
+          <strong className="mobile-menu-close-icon" onClick={toggleMobileMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

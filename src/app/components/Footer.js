@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
 export default function Footer() {
   return (
     <footer>
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-6">
-            <img src="/img/logo.svg" alt="logo" />
+            <Image src="/img/logo.svg" alt="logo" width={139} height={32} />
             <p>
               Step into the future of effortless assistance, where innovation
               meets simplicity.

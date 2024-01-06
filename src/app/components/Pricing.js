@@ -1,6 +1,39 @@
-import React from 'react';
+'use client';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 export default function Price() {
+  const [planType, setPlanType] = useState('monthly');
+
+  const togglePricing = (type, button) => {
+    if (button && button.classList) {
+      const buttons = document.querySelectorAll('.pricing-tab button');
+      buttons.forEach((btn) => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const pricingItems = document.querySelectorAll('.pricing-item');
+
+      pricingItems.forEach((item) => {
+        const monthlyPrice = item.getAttribute('data-monthly-price');
+        const yearlyPrice = item.getAttribute('data-yearly-price');
+        const spanElement = item.querySelector('h4 span');
+        const subElement = item.querySelector('h4 sub');
+
+        if (type === 'monthly') {
+          spanElement.textContent = monthlyPrice;
+          subElement.textContent = '/m';
+        } else if (type === 'yearly') {
+          spanElement.textContent = yearlyPrice;
+          subElement.textContent = '/y';
+        }
+      });
+    }
+  };
+
+  const handleButtonClick = (type, button) => {
+    setPlanType(type);
+    togglePricing(type, button);
+  };
   return (
     <div className="pricing-area">
       <div className="container">
@@ -12,11 +45,13 @@ export default function Price() {
             <div className="pricing-tab">
               <button
                 className="active"
-                onclick="togglePricing('monthly', this)"
+                onClick={() => handleButtonClick('monthly', event.target)}
               >
                 Monthly
               </button>
-              <button onclick="togglePricing('yearly', this)">Yearly</button>
+              <button onClick={() => handleButtonClick('yearly', event.target)}>
+                Yearly
+              </button>
             </div>
           </div>
         </div>
@@ -40,23 +75,48 @@ export default function Price() {
               </div>
               <ul>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Team members: 1
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Users: Unlimited
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Integrations: Unlimited
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Total message: 150
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Assistants: 2
                 </li>
               </ul>
@@ -69,7 +129,13 @@ export default function Price() {
               data-yearly-price="$269"
             >
               <h3>
-                Business <img src="/img/pro-btn.svg" alt="pro" />
+                Business{' '}
+                <Image
+                  src="/img/pro-btn.svg"
+                  alt="pro"
+                  width={92}
+                  height={26}
+                />
               </h3>
               <p>Perfect for small businesses.</p>
               <h4>
@@ -83,23 +149,48 @@ export default function Price() {
               </div>
               <ul>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Team members: 3
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Users: Unlimited
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Integrations: Unlimited
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Total message: 650
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Assistants: 5
                 </li>
               </ul>
@@ -124,23 +215,48 @@ export default function Price() {
               </div>
               <ul>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Team members: 1
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Users: Unlimited
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Integrations: Unlimited
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Total message: 1650
                 </li>
                 <li>
-                  <img src="/img/check.svg" alt="check" />
+                  <Image
+                    src="/img/check.svg"
+                    alt="check"
+                    width={24}
+                    height={24}
+                  />
                   Assistants: 12
                 </li>
               </ul>
