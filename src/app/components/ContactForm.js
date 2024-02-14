@@ -58,9 +58,10 @@ export default function ContactForm() {
             <div className="contact-form">
               <h2>Quick Responses Await!</h2>
               <p>
-                Connect with us! Feel free to ask any questions or share your
-                thoughts. We&lsquo;ll respond promptly.
-              </p>
+  Connect with us! Feel free to ask any questions or share your
+  thoughts. We'll respond promptly.
+</p>
+
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <div className="input-group">
