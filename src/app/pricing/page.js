@@ -18,7 +18,7 @@ export default function Pricing() {
       </div>
       <Faq />
       <div className="mb-192">
-        <Brand />
+       
       </div>
       <Newsletter />
     </>

@@ -15,7 +15,7 @@ export default function Examples() {
               collaborating with your entire team."
       />
       <Solution />
-      <Brand />
+      
       <div className="mt-192">
         <Newsletter />
       </div>
