@@ -47,7 +47,7 @@ export default function Header() {
       </div>
       <div className="mobile-header">
         <Link href="/">
-          <Image src="/img/logo.svg" alt="logo" width={139} height={32} />
+          <Image src="/img/logo.png" alt="logo" width={139} height={32} />
         </Link>
         <span className="mobile-menu-open-icon" onClick={toggleMobileMenu}>
           <svg
