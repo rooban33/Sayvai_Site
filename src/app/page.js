@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Brand />
+      
       <div className="feature-area mt-192">
         <div className="container">
           <div className="row">

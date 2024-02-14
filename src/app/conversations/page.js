@@ -113,7 +113,7 @@ export default function Conversations() {
                   <a href="#">Github</a>
                 </li>
                 <li>
-                  <a href="#">Intercom</a>
+                  <a href="#">Invoices</a>
                 </li>
                 <li>
                   <a href="#">Google Contacts</a>
@@ -151,14 +151,14 @@ export default function Conversations() {
                         </div>
                         <div class="solution-chat-message-item">
                           <Image
-                            src="/img/user-assistify.svg"
+                            src="/img/user-Sayvai.svg"
                             alt="user"
                             width={32}
                             height={32}
                           />
                           <div class="solution-chat-message-item-content">
                             <h3>
-                              Assistify AI <span>8:42 PM</span>
+                              Sayvai AI <span>8:42 PM</span>
                             </h3>
                             <p>
                               The current total inventory value for the Salad

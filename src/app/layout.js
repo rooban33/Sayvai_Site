@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 const manrope = Manrope({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Assistify',
+  title: 'Sayvai',
   description: 'AI Startup and Technology Template',
 };
 

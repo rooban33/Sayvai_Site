@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-6">
-            <Image src="/img/logo.svg" alt="logo" width={139} height={32} />
+            <Image src="/img/logo.png" alt="logo" width={139} height={72} />
             <p>
               Step into the future of effortless assistance, where innovation
               meets simplicity.
@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="container">
           <div className="row gy-2">
             <div className="col-md-6 align-self-center">
-              <p>Copyright © 2023 Assistify. All rights reserved.</p>
+              <p>Copyright © 2023 Sayvai. All rights reserved.</p>
             </div>
             <div className="col-md-6">
               <ul>

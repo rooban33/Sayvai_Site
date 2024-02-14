@@ -13,9 +13,7 @@ export default function Hero() {
               <span>in Minutes!</span>
             </h1>
             <p className="mx-850 text-center">
-              Rapidly Develop a Tailored AI Assistant with OpenAI GPT-3.5:
-              Seamlessly Connect to Resources and Upload Files for Comprehensive
-              Assistance.
+            Seamlessly Connect to Resources in your business
             </p>
             <div className="hero-btn">
               <Link href="/contact" className="btn btn-primary">

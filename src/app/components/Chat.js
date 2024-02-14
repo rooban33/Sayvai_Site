@@ -12,24 +12,24 @@ export default function Chat() {
               You <span>1:17 PM</span>
             </h3>
             <p>
-              What was the revenue generated during the Black Friday Sale 2022
+              What was the revenue generated during the Diwali Sale 2023
               campaign?
             </p>
           </div>
         </div>
         <div className="hero-chat-item">
           <Image
-            src="/img/user-assistify.svg"
+            src="/favicon.ico"
             alt="user"
             width={32}
             height={32}
           />
           <div className="hero-chat-item-content">
             <h3>
-              Assistify <span>1:17 PM</span>
+              Sayvai <span>1:17 PM</span>
             </h3>
             <p>
-              The revenue generated during the Black Friday Sale 2022 campaign
+              The revenue generated during the Diwali Sale 2023 campaign
               was $20,000.
             </p>
           </div>
@@ -41,23 +41,23 @@ export default function Chat() {
               You <span>1:17 PM</span>
             </h3>
             <p>
-              What was the open rate for the Black Friday Sale 2022 campaign?
+              What was the open rate for the Diwali Sale 2023 campaign?
             </p>
           </div>
         </div>
         <div className="hero-chat-item">
           <Image
-            src="/img/user-assistify.svg"
+            src="/favicon.ico"
             alt="user"
             width={32}
             height={32}
           />
           <div className="hero-chat-item-content">
             <h3>
-              Assistify <span>1:17 PM</span>
+              Sayvai <span>1:17 PM</span>
             </h3>
             <p>
-              The open rate for the Black Friday Sale 2022 campaign was 25%.
+              The open rate for the Diwali Sale 2023 campaign was 25%.
             </p>
           </div>
         </div>

@@ -45,54 +45,16 @@ export default function ContactForm() {
           </div>
           <div className="col-md-12 col-lg-6">
             <div className="contact-content">
-              <Image src="/img/logo.svg" alt="logo" width={139} height={32} />
+              <Image src="/img/logo.png" alt="logo" width={139} height={62} />
               <p>
-                OpenAI presented Assistify with a range of challenging tasks,
+                OpenAI presented Sayvai with a range of challenging tasks,
                 featuring tight latency requirements, substantial ambiguity, and
-                instances of incorrect answers. In turn, Assistify collaborated
+                instances of incorrect answers. In turn, Sayvai collaborated
                 closely to tailor their QA systems to our specific requirements.
               </p>
-              <h3>John Lawson</h3>
-              <h4>Member of Technical Staff</h4>
-              <h5>Trusted by the world&lsquo;s most ambitious teams</h5>
-              <div className="contact-brand">
-                <Image
-                  src="/img/brand/1.png"
-                  alt="brand"
-                  width={190}
-                  height={76}
-                />
-                <Image
-                  src="/img/brand/2.png"
-                  alt="brand"
-                  width={190}
-                  height={76}
-                />
-                <Image
-                  src="/img/brand/3.png"
-                  alt="brand"
-                  width={190}
-                  height={76}
-                />
-                <Image
-                  src="/img/brand/4.png"
-                  alt="brand"
-                  width={190}
-                  height={76}
-                />
-                <Image
-                  src="/img/brand/5.png"
-                  alt="brand"
-                  width={190}
-                  height={76}
-                />
-                <Image
-                  src="/img/brand/6.png"
-                  alt="brand"
-                  width={190}
-                  height={76}
-                />
-              </div>
+              <h3>KASIVISWANATHAN I</h3>
+              <h4>CO-FOUNDER</h4>
+              
             </div>
           </div>
           <div className="col-md-12 col-lg-6">

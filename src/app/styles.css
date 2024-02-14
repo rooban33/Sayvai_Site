@@ -30,37 +30,37 @@ Index
  *  00. Variable
 /* ====================================== */
 :root {
-  --lavender: #a570ff;
-  --pink: #ff6eb2;
-  --peach: #ffad66;
+  --lavender: #216c74;
+  --pink: #0ec6a7;
+  --peach: #3dd2a8;
   --light: #ffffff;
-  --light-50: #8181b1;
-  --light-100: #8d8db9;
-  --light-200: #9a9ac1;
-  --light-300: #a6a6c9;
-  --light-400: #b3b3d0;
-  --light-500: #c0c0d8;
-  --light-600: #cccce0;
-  --light-700: #d9d9e8;
-  --light-800: #e6e6ef;
-  --light-900: #f2f2f7;
-  --dark-50: #4e4e7e;
-  --dark-100: #464672;
-  --dark-200: #3e3e65;
-  --dark-300: #363659;
-  --dark-400: #2f2f4c;
-  --dark-500: #27273f;
-  --dark-600: #1f1f33;
-  --dark-700: #171726;
-  --dark-800: #101019;
-  --dark-900: #08080d;
+  --light-50: #c0c0d8; /* Adjusted based on lavender */
+  --light-100: #d9d9e8; /* Adjusted based on pink */
+  --light-200: #e6e6ef; /* Adjusted based on peach */
+  --light-300: #f2f2f7;
+  --light-400: #ffffff;
+  --light-500: #ffffff;
+  --light-600: #ffffff;
+  --light-700: #ffffff;
+  --light-800: #ffffff;
+  --light-900: #ffffff;
+  --dark-50: #324d58; /* Adjusted based on lavender */
+  --dark-100: #101019; /* Adjusted based on pink */
+  --dark-200: #08080d; /* Adjusted based on peach */
+  --dark-300: #000000; 
+  --dark-400: #000000; 
+  --dark-500: #000000; 
+  --dark-600: #000000; 
+  --dark-700: #000000; 
+  --dark-800: #000000; 
+  --dark-900: #000000; 
   --input-bg: #0000004d;
   --input-border: #3d2d5a;
   --gradient-lavender-pink-peach: linear-gradient(
     98deg,
-    #a570ff 0%,
-    #ff6eb2 50%,
-    #ffad66 100%
+    var(--lavender) 0%,
+    var(--pink) 50%,
+    var(--peach) 100%
   );
   --gradient-w-500-w-100: linear-gradient(
     180deg,
@@ -73,6 +73,7 @@ Index
     rgba(8, 8, 12, 0) 100%
   );
 }
+
 /* ======================================
  *  01. Common
 /* ====================================== */
@@ -81,7 +82,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  background: #08080d url(/img/bg.svg) center/cover no-repeat;
+  background: #216c74 url(/img/bg.svg) center/cover no-repeat;
   color: var(--light-300);
 }
 input:focus {
@@ -566,7 +567,7 @@ header nav ul li a:hover {
 }
 
 .pricing-button button {
-  border: 1px solid #2f254e;
+  border: 1px solid #133E42;
   padding: 12px;
   font-weight: 600;
   background: transparent;
@@ -580,7 +581,7 @@ header nav ul li a:hover {
 }
 
 .pricing-button button:last-child {
-  background: linear-gradient(98deg, #a570ff 0%, #ff6eb2 50%, #ffad66 100%);
+  background: linear-gradient(98deg, #133E42 0%, #2C919C 50%, #7a9ea2 100%);
   border: 1px solid #a570ff;
   color: var(--light);
 }
@@ -624,8 +625,8 @@ header nav ul li a:hover {
 .accordion-item:first-of-type,
 .accordion-item:last-of-type {
   border-radius: 8px;
-  border: 1px solid #211734;
-  background: linear-gradient(180deg, #221736 0%, #211734 100%);
+  border: 1px solid #133E42;
+  background: linear-gradient(180deg, #133E42 0%, #2C919C 100%);
 }
 .accordion-button {
   background: transparent;
@@ -772,8 +773,8 @@ h2.accordion-header button,
   border-radius: 16px;
   background: linear-gradient(
     180deg,
-    rgba(141, 141, 185, 0.16) 0%,
-    rgba(8, 8, 12, 0) 100%
+    rgba(169, 169, 179, 0.16) 0%,
+    rgba(146, 146, 160, 0) 100%
   );
   backdrop-filter: blur(8px);
 }
@@ -785,8 +786,8 @@ h2.accordion-header button,
   border-radius: 16px;
   background: linear-gradient(
     180deg,
-    rgba(141, 141, 185, 0.16) 0%,
-    rgba(8, 8, 12, 0) 100%
+    #2C919C 0%,
+    rgba(188, 188, 197, 0) 100%
   );
   backdrop-filter: blur(8px);
 }
@@ -795,9 +796,9 @@ h2.accordion-header button,
   border-top: 1px solid;
   border-image-source: linear-gradient(
     270deg,
-    rgba(41, 41, 61, 0) 3.33%,
-    #29293d 50%,
-    rgba(41, 41, 61, 0) 96.67%
+    rgba(216, 216, 222, 0) 3.33%,
+    #2C919C 50%,
+    rgba(153, 153, 166, 0) 96.67%
   );
   border-image-slice: 1;
   margin-top: 50px;
