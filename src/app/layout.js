@@ -9,7 +9,7 @@ const manrope = Manrope({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Sayvai',
-  description: 'AI Startup and Technology Template',
+  description: 'DEMOCRATIZING AI',
 };
 
 export default function RootLayout({ children }) {
