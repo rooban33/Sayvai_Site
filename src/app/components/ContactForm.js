@@ -47,7 +47,7 @@ export default function ContactForm() {
             <div className="contact-content">
               <Image src="/img/logo.png" alt="logo" width={139} height={62} />
               <p>
-              We're thrilled to connect with you and explore the possibilities of collaboration on exciting projects or discuss any inquiries you may have. Whether you're a fellow developer, a potential client, or someone who shares a passion for technology and innovation, SAYVAI is here to engage in meaningful conversations.
+                We&apos;re thrilled to connect with you and explore the possibilities of collaboration on exciting projects or discuss any inquiries you may have. Whether you&apos;re a fellow developer, a potential client, or someone who shares a passion for technology and innovation, SAYVAI is here to engage in meaningful conversations.
               </p>
               <h3>KASIVISWANATHAN I</h3>
               <h4>CO-FOUNDER</h4>
@@ -58,9 +58,9 @@ export default function ContactForm() {
             <div className="contact-form">
               <h2>Quick Responses Await!</h2>
               <p>
-  Connect with us! Feel free to ask any questions or share your
-  thoughts. We'll respond promptly.
-</p>
+                Connect with us! Feel free to ask any questions or share your
+                thoughts. We&apos;ll respond promptly.
+              </p>
 
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
