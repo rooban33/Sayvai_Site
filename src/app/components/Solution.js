@@ -19,8 +19,8 @@ export default function Solution() {
                   <Image
                     src="/img/logo.png"
                     alt="solution"
-                    width={500}
-                    height={250}
+                    width={100}
+                    height={150}
                   />
                 </div>
                 <div className="col-md-6 pl-47">
@@ -30,7 +30,7 @@ export default function Solution() {
                     Sayvai ensures compatibility with various platforms and
                     file formats for a seamless experience.
                   </p>
-                  <Link href="#" className="btn btn-secondary">
+                  <Link href="/conversations" className="btn btn-secondary">
                     Learn more
                   </Link>
                 </div>
@@ -133,7 +133,7 @@ export default function Solution() {
                       </div>
                       <div className="solution-chat-message-item">
                         <Image
-                          src="/favicon.ico"
+                          src="/img/robo.png"
                           alt="user"
                           width={32}
                           height={32}

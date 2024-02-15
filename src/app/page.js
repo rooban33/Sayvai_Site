@@ -6,6 +6,8 @@ import Newsletter from './components/Newsletter';
 import Solution from './components/Solution';
 import Price from './components/Pricing';
 
+
+
 export default function Home() {
   return (
     <>

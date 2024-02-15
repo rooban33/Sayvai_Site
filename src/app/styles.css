@@ -278,6 +278,9 @@ header nav ul li a:hover {
   height: 32px;
   width: 32px;
 }
+  input[type="text"]::placeholder {
+    color: white !important; /* Change the color to white */
+  }
 .hero-chat-input {
   position: relative;
   margin-top: 40px;
@@ -446,7 +449,7 @@ header nav ul li a:hover {
   margin: 0;
 }
 .solution-item img {
-  width: 100%;
+  width: 70%;
 }
 .solution-chat-message {
   display: grid;

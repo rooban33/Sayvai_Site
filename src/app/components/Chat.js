@@ -19,7 +19,7 @@ export default function Chat() {
         </div>
         <div className="hero-chat-item">
           <Image
-            src="/favicon.ico"
+            src="/img/robo.png"
             alt="user"
             width={32}
             height={32}
@@ -47,7 +47,7 @@ export default function Chat() {
         </div>
         <div className="hero-chat-item">
           <Image
-            src="/favicon.ico"
+            src="/img/robo.png"
             alt="user"
             width={32}
             height={32}

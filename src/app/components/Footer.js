@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-md-6">
-            <Image src="/img/logo.png" alt="logo" width={139} height={72} />
+            <Image src="/img/logo.png" alt="logo" width={139} height={82} />
             <p>
               Step into the future of effortless assistance, where innovation
               meets simplicity.

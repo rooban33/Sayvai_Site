@@ -16,7 +16,7 @@ export default function Header() {
           <div className="row align-items-center">
             <div className="col-md-2">
               <Link href="/">
-                <Image src="/img/logo.png" alt="logo" width={139} height={62} />
+                <Image src="/img/logo.png" alt="logo" width={139} height={72} />
               </Link>
             </div>
             <div className="col-md-8">
@@ -30,6 +30,9 @@ export default function Header() {
                   </li>
                   <li>
                     <Link href="/pricing">Pricing</Link>
+                  </li>
+                  <li>
+                    <Link href="/integrations">Integrations</Link>
                   </li>
                   <li>
                     <Link href="/contact">Contact</Link>

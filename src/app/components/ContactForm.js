@@ -1,6 +1,6 @@
-'use client';
-import Image from 'next/image';
+'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,7 @@ export default function ContactForm() {
     message: '',
     agreedTerms: false,
   });
+  const [formSubmitted, setFormSubmitted] = useState(false); // Define formSubmitted state
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -20,17 +21,37 @@ export default function ContactForm() {
     setFormData({ ...formData, [name]: newValue });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormData({
-      firstName: '',
-      lastName: '',
-      companyName: '',
-      jobTitle: '',
-      emailAddress: '',
-      phoneNumber: '',
-      message: '',
-      agreedTerms: false,
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Form submission logic here, for example, using fetch
+    fetch('https://formspree.io/f/moqgdwyv', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        setFormSubmitted(true); // Update formSubmitted state
+        // Optionally, you can reset the form after successful submission
+        setFormData({
+          firstName: '',
+          lastName: '',
+          companyName: '',
+          jobTitle: '',
+          emailAddress: '',
+          phoneNumber: '',
+          message: '',
+          agreedTerms: false
+        });
+      } else {
+        console.error('Form submission failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
     });
   };
 
@@ -39,19 +60,20 @@ export default function ContactForm() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h2 className="title-2">
-              Get <span>in Touch</span>
-            </h2>
+             
+              <h2 className="title-2">
+                Get <span>in Touch</span>
+              </h2>
+            
           </div>
           <div className="col-md-12 col-lg-6">
             <div className="contact-content">
-              <Image src="/img/logo.png" alt="logo" width={139} height={62} />
+              <Image src="/img/logo.png" alt="logo" width={139} height={82} />
               <p>
                 We&apos;re thrilled to connect with you and explore the possibilities of collaboration on exciting projects or discuss any inquiries you may have. Whether you&apos;re a fellow developer, a potential client, or someone who shares a passion for technology and innovation, SAYVAI is here to engage in meaningful conversations.
               </p>
               <h3>KASIVISWANATHAN I</h3>
               <h4>CO-FOUNDER</h4>
-              
             </div>
           </div>
           <div className="col-md-12 col-lg-6">
@@ -61,7 +83,6 @@ export default function ContactForm() {
                 Connect with us! Feel free to ask any questions or share your
                 thoughts. We&apos;ll respond promptly.
               </p>
-
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <div className="input-group">
