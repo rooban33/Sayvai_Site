@@ -151,7 +151,7 @@ export default function Conversations() {
                         </div>
                         <div class="solution-chat-message-item">
                           <Image
-                            src="/img/user-Sayvai.svg"
+                            src="/img/robo.png"
                             alt="user"
                             width={32}
                             height={32}
