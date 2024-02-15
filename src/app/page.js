@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Newsletter from './components/Newsletter';
 import Solution from './components/Solution';
 import Price from './components/Pricing';
+import Page from './conversations/page';
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ with the chatbot."
       <Solution />
       <Price />
       <Faq />
+      <Page />
       <Newsletter />
     </>
   );
