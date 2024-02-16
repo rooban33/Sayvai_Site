@@ -45,7 +45,7 @@ export default function Solution() {
                     workflows. Boost team efficiency by 90% with tailored data
                     access for each assistant.
                   </p>
-                  <Link href="#" className="btn btn-secondary">
+                  <Link href="/conversations" className="btn btn-secondary">
                     Learn more
                   </Link>
                 </div>
@@ -179,7 +179,7 @@ export default function Solution() {
                     software, and beyond – Sayvai is ready to assist wherever
                     you need it.
                   </p>
-                  <Link href="#" className="btn btn-secondary">
+                  <Link href="/conversations" className="btn btn-secondary">
                     Learn more
                   </Link>
                 </div>
@@ -194,7 +194,7 @@ export default function Solution() {
                     your assistant aligns perfectly with the unique demands of
                     different scenarios.
                   </p>
-                  <Link href="#" className="btn btn-secondary">
+                  <Link href="/conversations" className="btn btn-secondary">
                     Learn more
                   </Link>
                 </div>
